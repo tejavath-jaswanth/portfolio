@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tejavath Jaswanth – Portfolio</title>
+<meta name="description" content="Portfolio of Tejavath Jaswanth, B.Tech student learning ethical hacking and bug bounty hunting, with interests in AI data annotation and Telugu–English translation.">
+<meta property="og:title" content="Tejavath Jaswanth – Portfolio">
+<meta property="og:description" content="B.Tech student learning ethical hacking and bug bounty hunting, with interests in AI data annotation and Telugu–English translation.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a84ff'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ETJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("theme")}catch(e){}document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.classList.add("js")</script>
+<style>
+:root{--bg:#000;--card:rgba(44,44,46,.55);--glass:rgba(40,40,44,.6);--line:rgba(255,255,255,.12);--text:#f5f5f7;--muted:#9a9aa1;--blue:#0a84ff;--chip:rgba(255,255,255,.1);--spot:rgba(255,255,255,.1);--o:.5;--font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,system-ui,sans-serif;color-scheme:dark}
+:root[data-theme=light]{--bg:#f2f2f7;--card:rgba(255,255,255,.7);--glass:rgba(255,255,255,.7);--line:rgba(0,0,0,.08);--text:#1d1d1f;--muted:#6e6e73;--blue:#007aff;--chip:rgba(0,0,0,.06);--spot:rgba(0,122,255,.1);--o:.32;color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 1.0625rem/1.55 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s,color .4s}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;transform:translate(calc(var(--px,0)*50px),calc(var(--py,0)*50px));transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.orb{position:absolute;width:46vmax;height:46vmax;border-radius:50%;filter:blur(90px);opacity:var(--o);animation:drift 22s ease-in-out infinite alternate}
+.o1{background:#0a84ff;top:-18vmax;left:-12vmax}
+.o2{background:#bf5af2;top:20vmax;right:-18vmax;animation-delay:-7s}
+.o3{background:#ff9f0a;bottom:-24vmax;left:20vmax;animation-delay:-14s;opacity:calc(var(--o)*.7)}
+@keyframes drift{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+nav{position:fixed;top:max(12px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:4px;padding:6px;border-radius:999px;background:var(--glass);border:1px solid var(--line);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);max-width:calc(100vw - 24px)}
+nav .links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav a,nav button{padding:8px 14px;border-radius:999px;font:500 .9rem var(--font);color:var(--muted);text-decoration:none;white-space:nowrap;border:0;background:none;cursor:pointer;transition:background .25s,color .25s}
+nav a:hover,nav button:hover{color:var(--text)}
+nav a.on{background:var(--chip);color:var(--text)}
+nav a.brand{color:var(--text);font-weight:700}
+#theme span{display:inline-block;font-size:1.05rem;transition:transform .5s}
+:root[data-theme=light] #theme span{transform:rotate(180deg)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:110px 0 20px}
+h2{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.03em;line-height:1.1;margin-bottom:26px}
+.hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 60px}
+.hi{color:var(--muted);font-size:1.2rem;font-weight:500}
+h1{font-size:clamp(2.9rem,10vw,7rem);line-height:1;letter-spacing:-.045em;font-weight:700;margin:10px 0 18px;padding-bottom:.08em;background:linear-gradient(120deg,var(--text) 35%,var(--blue) 130%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(1.3rem,3.4vw,2rem);font-weight:600;letter-spacing:-.02em;min-height:1.4em}
+#role{display:inline-block;color:var(--blue);transition:opacity .3s,transform .3s}
+#role.out{opacity:0;transform:translateY(8px)}
+.lead{color:var(--muted);max-width:32em;margin:16px 0 30px;font-size:1.15rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;border:1px solid var(--line);background:var(--glass);color:var(--text);font:600 1rem var(--font);text-decoration:none;cursor:pointer;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);transition:transform .2s,filter .2s}
+.btn:hover{filter:brightness(1.12)}
+.btn:active{transform:scale(.96)}
+.btn.p{background:var(--blue);border-color:transparent;color:#fff}
+.glass{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:26px;-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),var(--spot),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.glass:hover::before{opacity:1}
+.glass h3{font-size:1.2rem;letter-spacing:-.02em;margin-bottom:4px}
+.glass p{color:var(--muted)}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.s2{grid-column:span 2}
+.big{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.03em;line-height:1.1;color:var(--text)!important}
+.chips{display:inline-flex;gap:2px;padding:4px;border-radius:999px;background:var(--chip);margin-bottom:22px;overflow-x:auto;max-width:100%}
+.chips button{padding:8px 18px;border-radius:999px;border:0;background:none;color:var(--muted);font:500 .95rem var(--font);cursor:pointer;white-space:nowrap;transition:background .25s,color .25s}
+.chips button[aria-pressed=true]{background:var(--bg);color:var(--text);box-shadow:0 1px 6px rgba(0,0,0,.25)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.sk{display:flex;flex-direction:column;gap:4px;min-height:132px;padding:22px;border-radius:24px}
+.sk[hidden]{display:none}
+.sk.sw{animation:show .4s}
+@keyframes show{from{opacity:0;transform:scale(.94)}}
+.pj{display:flex;flex-direction:column;gap:6px;padding:22px;border-radius:24px}
+.pj .btn{align-self:flex-start;margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tags span{padding:3px 10px;border-radius:999px;background:var(--chip);font-size:.85rem;color:var(--muted)}
+.form{display:grid;gap:12px;margin-top:28px;padding-top:26px;border-top:1px solid var(--line)}
+.form label{display:grid;gap:6px;font-weight:500;font-size:.95rem}
+.form input,.form textarea{width:100%;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:var(--chip);color:var(--text);font:400 1rem var(--font);resize:vertical}
+.form input:focus,.form textarea:focus{outline:2px solid var(--blue);border-color:transparent}
+.form .btn{justify-self:start}
+.mail{display:inline-block;font-size:clamp(1.4rem,5vw,3rem);font-weight:700;letter-spacing:-.03em;text-decoration:none;word-break:break-all;margin:6px 0 10px;transition:color .2s}
+.mail:hover{color:var(--blue)}
+.contact .btns{margin-top:22px}
+footer{padding:70px 20px calc(40px + env(safe-area-inset-bottom));text-align:center;color:var(--muted);font-size:.9rem}
+.toast{position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));transform:translate(-50%,30px);opacity:0;padding:12px 20px;border-radius:999px;background:var(--glass);border:1px solid var(--line);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);font-weight:500;transition:opacity .35s,transform .35s;pointer-events:none;z-index:20}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:860px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}.s2{grid-column:auto}section{padding-top:90px}nav a:not(.brand){padding:8px 10px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.orbs{transform:none}}
+</style>
+</head>
+<body>
+<div class="orbs" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
+<nav aria-label="Main">
+<a class="brand" href="#top">TJ</a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+<button id="theme" aria-label="Switch between light and dark theme"><span>◐</span></button>
+</nav>
+
+<main>
+<section class="hero" id="top">
+<div class="wrap">
+<p class="hi" id="greet">Hello</p>
+<h1>Tejavath Jaswanth</h1>
+<p class="role">B.Tech student <span id="role">learning ethical hacking</span></p>
+<p class="lead">I am learning ethical hacking and bug bounty hunting, practising on TryHackMe, and exploring AI data annotation and Telugu–English translation.</p>
+<div class="btns">
+<a class="btn p" href="mailto:tejavathjaswanth17@gmail.com">Email me</a>
+<button class="btn" data-vcf>Save contact</button>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+<h2>About</h2>
+<div class="bento">
+<div class="glass s2 rv"><h3>About me</h3><p>I completed Intermediate and I am now pursuing B.Tech. I am learning computer fundamentals, ethical hacking and bug bounty hunting, and I have used TryHackMe to practise.</p></div>
+<div class="glass rv"><h3>Education</h3><p class="big">B.Tech</p><p>Pursuing. Intermediate completed.</p></div>
+<div class="glass rv"><h3>Platform</h3><p class="big">TryHackMe</p><p>Used for learning ethical hacking.</p></div>
+<div class="glass s2 rv"><h3>Hobby</h3><p class="big">Playing cricket</p><p>What I enjoy outside of study.</p></div>
+<div class="glass s2 rv"><h3>Languages</h3><p class="big">Telugu, English, Hindi</p><p>Telugu fluent. English and Hindi intermediate.</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="wrap">
+<h2>Skills</h2>
+<div class="chips" role="group" aria-label="Filter skills">
+<button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="t">Technical</button><button aria-pressed="false" data-f="c">Career focus</button><button aria-pressed="false" data-f="l">Languages</button>
+</div>
+<div class="grid" id="grid"></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="wrap">
+<h2>Projects</h2>
+<div class="grid" id="pgrid"></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+<h2>Contact</h2>
+<div class="glass rv">
+<a class="mail" href="mailto:tejavathjaswanth17@gmail.com">tejavathjaswanth17@gmail.com</a>
+<p>Phone and WhatsApp: <a href="tel:+919908704735">9908704735</a></p>
+<div class="btns">
+<button class="btn p" id="copy">Copy email</button>
+<a class="btn" href="tel:+919908704735">Call</a>
+<a class="btn" href="https://wa.me/919908704735" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn" href="https://github.com/tejavath-jaswanth" target="_blank" rel="noopener">GitHub</a>
+<button class="btn" data-vcf>Save contact</button>
+</div>
+<form class="form" id="cf">
+<h3>Send a message</h3>
+<label>Your name<input id="cn" required autocomplete="name"></label>
+<label>Message<textarea id="cm" rows="4" required></textarea></label>
+<button class="btn p" type="submit">Send by email</button>
+<p>This opens your email app with the message ready to send.</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© <span id="yr">2026</span> Tejavath Jaswanth</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},$$=function(s){return[].slice.call(document.querySelectorAll(s))};
+var rm=matchMedia("(prefers-reduced-motion:reduce)").matches,root=document.documentElement;
+var EMAIL="tejavathjaswanth17@gmail.com";
+/* ADD YOUR PROJECTS HERE. While this list is empty the Projects section stays hidden.
+   Entry format: {title:"Project name",text:"What it does",tags:["Python"],url:"https://link-to-project"} (tags and url are optional) */
+var PROJECTS=[];
+
+/* greeting by local time */
+var h=new Date().getHours();
+$("#greet").textContent=h<5?"Hello":h<12?"Good morning":h<17?"Good afternoon":h<22?"Good evening":"Hello";
+
+/* rotating line */
+var R=["learning ethical hacking","using TryHackMe","exploring AI data annotation","playing cricket"],ri=0,role=$("#role");
+if(!rm)setInterval(function(){role.classList.add("out");setTimeout(function(){ri=(ri+1)%R.length;role.textContent=R[ri];role.classList.remove("out")},300)},2800);
+
+/* theme */
+$("#theme").onclick=function(){var n=root.dataset.theme==="dark"?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}$('meta[name=theme-color]').content=n==="dark"?"#000000":"#f2f2f7"};
+$('meta[name=theme-color]').content=root.dataset.theme==="dark"?"#000000":"#f2f2f7";
+
+/* projects: section appears only when PROJECTS has entries */
+if(!PROJECTS.length){$("#projects").remove();var pl=$('.links a[href="#projects"]');if(pl)pl.remove()}
+else PROJECTS.forEach(function(p){
+var a=document.createElement("article");a.className="glass pj rv";
+var h=document.createElement("h3");h.textContent=p.title;a.appendChild(h);
+var d=document.createElement("p");d.textContent=p.text;a.appendChild(d);
+if(p.tags&&p.tags.length){var g=document.createElement("div");g.className="tags";p.tags.forEach(function(x){var s=document.createElement("span");s.textContent=x;g.appendChild(s)});a.appendChild(g)}
+if(p.url){var l=document.createElement("a");l.className="btn";l.href=p.url;l.target="_blank";l.rel="noopener";l.textContent="View project";a.appendChild(l)}
+$("#pgrid").appendChild(a)});
+
+/* skills (levels exactly as stated) */
+var S=[["Python programming","t","Intermediate"],["MS Word and MS Excel","t","Technical skill"],["Internet research and information gathering","t","Technical skill"],["Windows and Kali Linux","t","Basic setup familiarity"],["Computer fundamentals","t","Currently learning"],["Ethical hacking and bug bounty hunting","c","Beginner, currently learning"],["AI data annotation","c","Area of interest"],["Image annotation","c","Area of interest"],["AI response evaluation","c","Area of interest"],["Telugu–English translation","c","Potential work area"],["PDF and document processing","c","Area of interest"],["Telugu","l","Fluent"],["English","l","Intermediate"],["Hindi","l","Intermediate"]];
+var grid=$("#grid");
+S.forEach(function(s){var a=document.createElement("article");a.className="glass sk rv";a.dataset.c=s[1];a.innerHTML="<h3>"+s[0]+"</h3><p>"+s[2]+"</p>";grid.appendChild(a)});
+$$(".chips button").forEach(function(b){b.onclick=function(){
+$$(".chips button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+$$(".sk").forEach(function(c){var show=b.dataset.f==="all"||c.dataset.c===b.dataset.f;c.hidden=!show;c.classList.remove("sw");if(show){void c.offsetWidth;c.classList.add("sw","in")}})}});
+
+/* reveal on scroll */
+var io="IntersectionObserver"in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15}):null;
+$$(".rv").forEach(function(el){io?io.observe(el):el.classList.add("in")});
+
+/* active nav link */
+var links=$$(".links a");
+if("IntersectionObserver"in window){var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"});
+$$("main section[id]").forEach(function(s){spy.observe(s)})}
+
+/* spotlight and parallax */
+addEventListener("pointermove",function(e){
+var c=e.target.closest&&e.target.closest(".glass");
+if(c){var r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")}
+if(!rm){root.style.setProperty("--px",(e.clientX/innerWidth-.5).toFixed(3));root.style.setProperty("--py",(e.clientY/innerHeight-.5).toFixed(3))}});
+
+/* toast */
+var tt,toast=function(m){var t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("show")},2200)};
+
+/* copy email */
+$("#copy").onclick=function(){
+(navigator.clipboard?navigator.clipboard.writeText(EMAIL):Promise.reject()).then(function(){toast("Email copied")},function(){toast("Could not copy. Please select the email and copy it.")})};
+
+/* save contact (vCard) */
+$$("[data-vcf]").forEach(function(b){b.onclick=function(){
+var v=["BEGIN:VCARD","VERSION:3.0","FN:Tejavath Jaswanth","N:Jaswanth;Tejavath;;;","TEL;TYPE=CELL:+919908704735","EMAIL:"+EMAIL,"URL:https://github.com/tejavath-jaswanth","END:VCARD"].join("\r\n");
+var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([v],{type:"text/vcard"}));a.download="Tejavath-Jaswanth.vcf";document.body.appendChild(a);a.click();a.remove();
+setTimeout(function(){URL.revokeObjectURL(a.href)},1000);toast("Contact card saved")}});
+
+/* contact form: opens the visitor's email app with the message ready to send */
+$("#cf").onsubmit=function(e){e.preventDefault();var n=$("#cn").value.trim(),m=$("#cm").value.trim();
+if(!n||!m){toast("Please fill in your name and message.");return}
+location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Portfolio message from "+n)+"&body="+encodeURIComponent(m+"\n\n"+n);
+toast("Opening your email app")};
+$("#yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
